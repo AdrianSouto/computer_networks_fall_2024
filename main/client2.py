@@ -215,9 +215,17 @@ def main():
 
     print("Bienvenido, para salir inserte 'exit'")
     host = input("Inserte el host: ")
+    if host == "exit":
+        return
     port = int(input("Inserte el puerto: "))
+    if port == "exit":
+        return
     user = input("Inserte el usuario: ")
+    if user == "exit":
+        return
     password = input("Inserte la contraseña: ")
+    if password == "exit":
+        return
     while True:
         command = input("Inserte un comando (DELE, LIST, STOR, RETR, PWD, CWD, RNFR, MKD, RMD): ")
         if command == "exit":
